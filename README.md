@@ -34,13 +34,23 @@ We've choosen 'buzz-ui-organism-welcome' and we have integrated it following the
 
 3.0.0
 
-Now we can see how the components communicate in ur app, using two simple components.
+Now we can see how the components communicate in your app, using two simple components.
+Described in [guide3]
+
+4.0.0
+
+At this tag we need to lear how to create our own component.
+Take a look at this 'custom-component' and how easy you can create it using cells scaffold 'generator­-cells'.
+./example_components/custom_component/
+See commands in [guide4]
 
 ### Tech
 
 * [node.js]
 * [npm] - Node Package Manager
 * [gulp] - Build system
+* [cells-starter-kit]
+* [cells-component-generator]
 
 
 ### Installation
@@ -60,6 +70,8 @@ $ cd hello-cells
    [node.js]: <http://nodejs.org>
    [Gulp]: <http://gulpjs.com>
    [cells catalog]: <http://bbva-files.s3.amazonaws.com/cells/bbva-catalog/index.html>
+   [cells-starter-kit]: <https://descinet.bbva.es/stash/scm/cel/generator-cells-starter-kit.git>
+   [cells-component-generator]: <https://www.npmjs.com/package/generator-cells>
    [guide1]: <link1>
    [guide2]: <link2>
    [guide3]: <link3>

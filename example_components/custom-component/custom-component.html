@@ -1,0 +1,46 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="custom-component-styles.html">
+
+<link rel="import" href="../cells-i18n-behavior/cells-i18n-behavior.html">
+
+<!--
+`<custom-component>` description.
+
+Example:
+
+```html
+<custom-component></custom-component>
+```
+
+## Data model
+[comment]: <> (use either one of the data model docs examples)
+
+Canonical DM: 'entityName', example available [List of entities]
+
+Component own DM example:
+```json
+{}
+```
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Custom property | Description     | Default        |
+|:---------------:|:---------------:| :-------------:|
+| --your-var      | var description | default value  |
+| --custom-component  | empty mixin     | {}             |
+
+@demo demo/index.html
+-->
+<dom-module id="custom-component">
+  <template>
+    <style include="custom-component-styles"></style>
+    
+    <h1>{{t('custom-component-welcome', lang)}}{{project.title}}</h1>
+    
+     <img src="{{project.image}}" alt="">
+    <content></content>
+  </template>
+  <script src="custom-component.js"></script>
+</dom-module>
