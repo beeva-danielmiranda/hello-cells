@@ -32,6 +32,10 @@ At this point our app is 'empty', just with a default greeting component, so... 
 For this example we have navigated to [cells catalog] looking for a nice and usefull component to start our app.
 We've choosen 'buzz-ui-organism-welcome' and we have integrated it following the [guide2] instructions.
 
+3.0.0
+
+Now we can see how the components communicate in ur app, using two simple components.
+
 ### Tech
 
 * [node.js]
