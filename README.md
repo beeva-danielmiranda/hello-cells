@@ -20,6 +20,13 @@
 
 Presentation
 
+1.0.0
+
+In this version we have already created our application using 'yo cells-starter-kit'.
+We have our application files & folders structure and can run 'sudo gulp serve' at the app folder to launch it.
+By default gulp will use 'localhost:80' to serve the app and will launch our browser to see it.
+At this point our app is 'empty', just with a default greeting component, so... is time to start including components.
+
 ### Tech
 
 * [node.js]

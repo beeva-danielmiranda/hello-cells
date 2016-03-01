@@ -1,0 +1,16 @@
+{
+  "name": "hello-cells",
+  "version": "0.1.0",
+  "dependencies": {
+    "cells-core": "https://descinet.bbva.es/stash/scm/cel/cells-core.git#0.5.0-beta",
+    "cells-template-empty": "https://descinet.bbva.es/stash/scm/celcom/cells-template-empty.git",
+    "platinum-sw": "PolymerElements/platinum-sw#~1.2.3",
+    "paper-toast": "PolymerElements/paper-toast#~1.0.0",
+    "datamanagers-pubsub-es": "https://descinet.bbva.es/stash/scm/bbvacellsapi/datamanagers-pubsub-es.git#~0.1.0",
+    "cells-router": "https://descinet.bbva.es/stash/scm/cel/cells-router.git#~0.1.0",
+    "cells-params-ps": "https://descinet.bbva.es/stash/scm/cel/cells-params-ps.git#~0.4"
+  },
+  "resolutions": {
+    "polymer": "~1.2.0"
+  }
+}

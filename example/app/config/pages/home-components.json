@@ -1,0 +1,21 @@
+{
+  "template": {
+    "familyPath": "../../components/cells-template-empty",
+    "tag": "cells-template-empty"
+  },
+  "components": [
+    {
+      "zone": "app__main",
+      "familyPath": "../elements/my-greeting",
+      "tag": "my-greeting",
+      "properties": {
+       "cellsConnections": {
+          "in": {},
+          "out": {}
+        }
+      },
+      "prefs": {}
+    }
+  ],
+  "dataManagers": []
+}
