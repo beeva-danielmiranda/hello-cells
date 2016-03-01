@@ -1,0 +1,38 @@
+<link rel="import" href="../cells-behaviors/cells-pubsub-behavior.html">
+<link rel="import" href="../component-1/component-1.html">
+<dom-module id="component-1-ps">
+  <template>
+    <component-1 title="[[title]]" subtitle="[[subtitle]]"></component-1>
+  </template>
+  <script>
+
+// @desc: This ui is the pub/sub comunication pattern for `component-1` component.
+// @component-type: UI
+Polymer({
+  is: 'component-1-ps',
+
+  behaviors: [
+    Polymer.CellsPubsub
+  ],
+
+  actionsIn: {
+    'ACTION_SHOW_ALERT': 'showAlert'
+  },
+
+  actionsOut: [    
+  ],
+
+  properties: {
+    title: String,
+    subtitle: String
+  },
+
+  showAlert: function(payload) {
+    var title = 'Título: '+payload.data.message;
+    var subtitle = 'Subtítulo: '+payload.data.message;
+    this.set('title',title);    
+    this.set('subtitle',subtitle);    
+  }
+});
+</script>
+</dom-module>

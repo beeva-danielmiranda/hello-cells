@@ -1,6 +1,6 @@
 {
   "name": "hello-cells",
-  "version": "0.1.0",
+  "version": "3.0.0",
   "dependencies": {
     "cells-core": "https://descinet.bbva.es/stash/scm/cel/cells-core.git#0.5.0-beta",
     "cells-template-empty": "https://descinet.bbva.es/stash/scm/celcom/cells-template-empty.git",
@@ -9,7 +9,9 @@
     "datamanagers-pubsub-es": "https://descinet.bbva.es/stash/scm/bbvacellsapi/datamanagers-pubsub-es.git#~0.1.0",
     "cells-router": "https://descinet.bbva.es/stash/scm/cel/cells-router.git#~0.1.0",
     "cells-params-ps": "https://descinet.bbva.es/stash/scm/cel/cells-params-ps.git#~0.4",
-    "buzz-ui-organism-welcome-ps": "https://descinet.bbva.es/stash/scm/celcom/buzz-ui-organism-welcome-ps.git#~1.2.0"
+    "buzz-ui-organism-welcome-ps": "https://descinet.bbva.es/stash/scm/celcom/buzz-ui-organism-welcome-ps.git#~1.2.0",
+    "component-1-ps": "../example_components/component-1-ps",
+    "component-2-ps": "../example_components/component-2-ps"
   },
   "resolutions": {
     "polymer": "~1.2.0"

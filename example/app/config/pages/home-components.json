@@ -13,6 +13,30 @@
           "out": {}
         }
       }
+    },
+    {
+      "zone": "app__main",
+      "tag": "component-1-ps",
+      "properties": {
+        "cellsConnections": {
+          "in": {
+            "ACTION_SHOW_ALERT": ""
+          },
+          "out": {}
+        }
+      }
+    },
+    {
+      "zone": "app__main",
+      "tag": "component-2-ps",
+      "properties": {
+        "cellsConnections": {
+          "in": {},
+          "out": {
+            "ACTION_SHOW_ALERT": ""
+          }
+        }
+      }
     }
   ],
   "dataManagers": []

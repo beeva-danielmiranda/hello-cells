@@ -1,0 +1,14 @@
+{
+  "name": "component-1-ps",
+  "version": "0.0.1",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.0",
+    "cells-behaviors": "https://descinet.bbva.es/stash/scm/cel/cells-behaviors.git#~0.1.16",
+    "component-1": "../example_components/component-1"
+  },
+  "devDependencies": {
+    "cells-sass": "https://descinet.bbva.es/stash/scm/cel/cells-sass.git#~0.1.0",
+    "web-component-tester": "~3.3.22"
+  },
+  "main": "component-1-ps.html"
+}

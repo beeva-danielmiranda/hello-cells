@@ -1,0 +1,24 @@
+{
+  "name": "component-1",
+  "version": "0.1.0",
+  "description": "Your component description",
+  "keywords": [
+    "i18n"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "cells-i18n-msg": "https://descinet.bbva.es/stash/scm/cel/cells-i18n-msg.git"
+  },
+  "devDependencies": {
+    "cells-sass": "https://descinet.bbva.es/stash/scm/cel/cells-sass.git",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^3.0.0",
+    "buzz-ui-theme": "https://descinet.bbva.es/stash/scm/celcom/buzz-ui-theme.git"
+  },
+  "main": [
+    "component-1.html"
+  ],
+  "resolutions": {
+    "polymer": "^1.2.1"
+  }
+}
