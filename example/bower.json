@@ -8,7 +8,8 @@
     "paper-toast": "PolymerElements/paper-toast#~1.0.0",
     "datamanagers-pubsub-es": "https://descinet.bbva.es/stash/scm/bbvacellsapi/datamanagers-pubsub-es.git#~0.1.0",
     "cells-router": "https://descinet.bbva.es/stash/scm/cel/cells-router.git#~0.1.0",
-    "cells-params-ps": "https://descinet.bbva.es/stash/scm/cel/cells-params-ps.git#~0.4"
+    "cells-params-ps": "https://descinet.bbva.es/stash/scm/cel/cells-params-ps.git#~0.4",
+    "buzz-ui-organism-welcome-ps": "https://descinet.bbva.es/stash/scm/celcom/buzz-ui-organism-welcome-ps.git#~1.2.0"
   },
   "resolutions": {
     "polymer": "~1.2.0"

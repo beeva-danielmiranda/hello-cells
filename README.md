@@ -27,6 +27,11 @@ We have our application files & folders structure and can run 'sudo gulp serve' 
 By default gulp will use 'localhost:80' to serve the app and will launch our browser to see it.
 At this point our app is 'empty', just with a default greeting component, so... is time to start including components.
 
+2.0.0
+
+For this example we have navigated to [cells catalog] looking for a nice and usefull component to start our app.
+We've choosen 'buzz-ui-organism-welcome' and we have integrated it following the [guide2] instructions.
+
 ### Tech
 
 * [node.js]
