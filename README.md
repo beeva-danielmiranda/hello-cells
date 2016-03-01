@@ -10,12 +10,13 @@
 - 0.1.0 : first step, read this file.
 - 1.0.0 : Application Setup Using Cells Starter Kit ([guide1])
 - 2.0.0 : Components catalog and integration in app ([guide2])
-- 3.0.0 : Build a Cell component ([guide3])
-- 4.0.0 : API and component logic ([guide4])
-- 5.0.0 : Components communication ([guide5])
+- 3.0.0 : Components communication ([guide3])
+- 4.0.0 : Build a Cell component ([guide4])
+- 5.0.0 : API and component logic ([guide5])
 - 6.0.0 : run local application ([guide6])
 
 ### Version
+
 0.1.0
 
 Presentation
