@@ -19,24 +19,55 @@
     <script>
     suite('<custom-component> tag', function() {
       var myEl;
+      var myButton;
+      var textArea;
+      var privateTextArea;
 
       suiteSetup(function() {
-          myEl = document.querySelector('#myEl');
+        myEl = document.querySelector('#myEl');
+        myButton = document.querySelector('button');
+        textArea = document.querySelector('[name="text"]');
+        privateTextArea = document.querySelector('[name="private-text"]');
       });
 
       suiteTeardown(function() {
-          myEl.remove();
+        myEl.remove();
       });
 
-      suite('in general', function() {
+      suite('1.- Initial Configuration', function() {
         test('should be in document', function() {
           expect(myEl).not.to.be.undefined;
         });
 
-        test('should have welcome property', function() {
-          expect(myEl.properties).to.have.property('welcome').that.is.an('Object');
+        test('should has "is" property equal to "custom-component"', function() {
+          expect(myEl).to.have.property('is');
+          expect(myEl.is).to.be.equal('custom-component');
         });
       });
+
+      /*
+       *Test the component's properties to be as expected
+       */
+      suite('2.- Check the properties and its types', function() {
+        test('should have "publicProperty" property', function() {
+          expect(myEl).to.have.property('publicProperty');
+          expect(myEl.publicProperty).to.be.equal('test');
+        });
+      });
+
+      /**
+       *Test the component's behavior
+       */
+      suite('3.- Methods test', function() {
+        test('returns "public response" when call "publicMethod"', function() {
+          expect(myEl.publicMethod()).to.be.equal('public response');
+        });
+
+        test('"privateText" changes on button click to "text" value', function() {
+          expect(myEl.publicMethod()).to.be.equal('public response');
+        });
+      });
+
     });
     </script>
   </body>

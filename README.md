@@ -50,6 +50,10 @@ See commands in [guide4]
 After create our component we would like to add some logic to it.
 This tag is more Polymer focused.
 
+6.0.0
+
+Now we have provide to our component some tests.
+
 ### Tech
 
 * [node.js]

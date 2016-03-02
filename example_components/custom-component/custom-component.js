@@ -6,10 +6,6 @@ Polymer({
     Polymer.i18nBehavior
   ],
 
-  listeners: {
-    'custom-click': '_handlerClickMethod'
-  },
-
   properties: {
     /**
      * Describes the title of the element, but is really just an excuse to
@@ -33,7 +29,8 @@ Polymer({
      */
     text: {
       type: String,
-      value: 'type here, click button and look at console'
+      value: 'type here, click button and look at console',
+      observer: '_textObserver'
     },
 
     /**
@@ -49,15 +46,27 @@ Polymer({
      * Private property with private access
      * @type {String}
      */
-    _privateProperty: String
+    _privateProperty: String,
 
+    /**
+     * Private text with private access
+     * @type {String}
+     */
+    _privateText: String
+
+  },
+
+  _textObserver: function() {
+    console.log('text changed');
   },
 
   /**
    * Public method with public access
    * @return {void}
    */
-  publicMethod: function() {},
+  publicMethod: function() {
+    return 'public response';
+  },
 
   /**
    * Private method with private access
@@ -72,6 +81,7 @@ Polymer({
   _handlerClickMethod: function(event) {
     console.info(event);
     console.log(this.text);
+    this._privateText = this.text;
   }
 
 });

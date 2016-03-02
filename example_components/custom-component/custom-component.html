@@ -43,9 +43,12 @@ The following custom properties and mixins are available for styling:
 
     <section>
       <p>
-        <textarea name="text" rows="8" cols="40" value={{text}}></textarea>
+        <textarea name="text" rows="8" cols="40" value={{text::input}}></textarea>
       </p>
       <button on-click="_handlerClickMethod">{{t('button-text', lang)}}</button>
+      <p>
+        <textarea name="privateText" rows="8" cols="40" value={{_privateText::input}} readonly="readonly"></textarea>
+      </p>
     </section>
 
     <content></content>
