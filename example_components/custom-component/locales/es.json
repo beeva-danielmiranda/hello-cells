@@ -1,5 +1,8 @@
 {
   "custom-component-welcome": {
     "message": "Bienvenido a "
+  },
+  "button-text": {
+    "message": "Abre la consola y púlsame"
   }
 }

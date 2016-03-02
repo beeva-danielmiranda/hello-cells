@@ -10,9 +10,9 @@
 - 0.1.0 : first step, read this file.
 - 1.0.0 : Application Setup Using Cells Starter Kit ([guide1])
 - 2.0.0 : Components catalog and integration in app ([guide2])
-- 3.0.0 : Components communication ([guide3])
-- 4.0.0 : Build a Cell component ([guide4])
-- 5.0.0 : API and component logic ([guide5])
+- 3.0.0 : Build a Cell component ([guide3])
+- 4.0.0 : API and component logic ([guide4])
+- 5.0.0 : Components communication ([guide5])
 - 6.0.0 : run local application ([guide6])
 
 ### Version
@@ -44,6 +44,11 @@ At this tag we need to lear how to create our own component.
 Take a look at this 'custom-component' and how easy you can create it using cells scaffold 'generator­-cells'.
 ./example_components/custom_component/
 See commands in [guide4]
+
+5.0.0
+
+After create our component we would like to add some logic to it.
+This tag is more Polymer focused.
 
 ### Tech
 

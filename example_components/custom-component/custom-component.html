@@ -36,10 +36,18 @@ The following custom properties and mixins are available for styling:
 <dom-module id="custom-component">
   <template>
     <style include="custom-component-styles"></style>
-    
+
     <h1>{{t('custom-component-welcome', lang)}}{{project.title}}</h1>
-    
-     <img src="{{project.image}}" alt="">
+
+    <img src="{{project.image}}" alt="">
+
+    <section>
+      <p>
+        <textarea name="text" rows="8" cols="40" value={{text}}></textarea>
+      </p>
+      <button on-click="_handlerClickMethod">{{t('button-text', lang)}}</button>
+    </section>
+
     <content></content>
   </template>
   <script src="custom-component.js"></script>

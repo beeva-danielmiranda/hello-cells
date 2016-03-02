@@ -1,5 +1,8 @@
 {
   "custom-component-welcome": {
     "message": "Welcome to "
+  },
+  "button-text": {
+    "message": "Open dev console and clickme"
   }
 }
