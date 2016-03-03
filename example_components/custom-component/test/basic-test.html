@@ -22,12 +22,18 @@
       var myButton;
       var textArea;
       var privateTextArea;
+      var inputVar1;
+      var inputVar2;
+      var computedVar;
 
       suiteSetup(function() {
         myEl = document.querySelector('#myEl');
         myButton = document.querySelector('button');
         textArea = document.querySelector('[name="text"]');
-        privateTextArea = document.querySelector('[name="private-text"]');
+        privateTextArea = document.querySelector('[name="privateText"]');
+        inputVar1 = document.querySelector('[name="var1"]');
+        inputVar2 = document.querySelector('[name="var2"]');
+        computedVar = document.querySelector('#computedVar');
       });
 
       suiteTeardown(function() {
@@ -64,7 +70,19 @@
         });
 
         test('"privateText" changes on button click to "text" value', function() {
-          expect(myEl.publicMethod()).to.be.equal('public response');
+          // we modified directly myEl property because dinamic assignement to native
+          // attributes do not fires changes events
+          myEl.text = 'custom text';
+          myButton.click();
+          expect(privateTextArea.value).to.be.equal(textArea.value);
+        });
+
+        test('"_computedText" changes when both "var1" and "var2" changes', function() {
+          // we modified directly myEl properties because dinamic assignement to native
+          // attributes do not fires changes events
+          myEl.var1 = 'var1text';
+          myEl.var2 = 'var2text';
+          expect(computedVar.innerHTML).to.be.equal(inputVar1.value + '--' + inputVar2.value);
         });
       });
 

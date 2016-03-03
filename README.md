@@ -54,6 +54,10 @@ This tag is more Polymer focused.
 
 Now we have provide to our component some tests.
 
+6.1.0
+
+Added computed property and tests review.
+
 ### Tech
 
 * [node.js]

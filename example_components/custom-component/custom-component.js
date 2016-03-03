@@ -52,12 +52,23 @@ Polymer({
      * Private text with private access
      * @type {String}
      */
-    _privateText: String
+    _privateText: String,
+
+    var1: String,
+    var2: String,
+    _computedText: {
+      type: String,
+      computed: '_computerMethod(var1, var2)'
+    }
 
   },
 
+  _computerMethod: function(var1, var2) {
+    return this._computedText = this.var1 + '--' + this.var2;
+  },
+
   _textObserver: function() {
-    console.log('text changed');
+    console.log('text observed: ' + this.text);
   },
 
   /**

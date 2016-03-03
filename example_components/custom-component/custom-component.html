@@ -43,12 +43,18 @@ The following custom properties and mixins are available for styling:
 
     <section>
       <p>
-        <textarea name="text" rows="8" cols="40" value={{text::input}}></textarea>
+        <textarea id="textArea" name="text" rows="8" cols="40" value={{text::input}}></textarea>
       </p>
       <button on-click="_handlerClickMethod">{{t('button-text', lang)}}</button>
       <p>
-        <textarea name="privateText" rows="8" cols="40" value={{_privateText::input}} readonly="readonly"></textarea>
+        <textarea name="privateText" rows="8" cols="40" value={{_privateText}} readonly="readonly"></textarea>
       </p>
+    </section>
+
+    <section>
+      <label for="var1">Var1</label><input type="text" name="var1" value="{{var1::input}}">
+      <label for="var2">Var2</label><input type="text" name="var2" value="{{var2::input}}">
+      <label for="computed">Computed: </label><span id="computedVar">{{_computedText::input}}</span>
     </section>
 
     <content></content>
